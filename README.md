@@ -6,7 +6,7 @@ Unit tests in jUnit5 of provided Calculator.jar
 
 ### Creating calculator object before each test excecution in base class:
 
-'''
+~~~
 public class BaseTest {
     protected Calculator calculator;
     @BeforeEach
@@ -14,15 +14,15 @@ public class BaseTest {
         this.calculator = new Calculator();
     }
 }
-'''
+~~~
 
 ### Parallel execution in jUnit5: 
 
-'''
+~~~
 junit.jupiter.execution.parallel.enabled = true
 junit.jupiter.execution.parallel.config.strategy = dynamic
 junit.jupiter.execution.parallel.mode.default = concurrent
-'''
+~~~
 
 ### Parametrized tests with data driven approach:
 
