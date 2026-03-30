@@ -66,18 +66,19 @@ junit.jupiter.execution.parallel.mode.default = concurrent
 ~~~
 
 
-    ### Test results:
+### Test results:
 
-    ![result1](results/result1.png)
-    ![result2](results/result2.png)
 
-    The complete test results are provided using [HTML preview](https://github.com/PiotrDuma/CalculatorTest/blob/main/results/Test%20Results%20-%20All_in_CalculatorTest.html). 
+![result1](https://github.com/PiotrDuma/CalculatorTest/blob/main/results/result1.png)
+![result2](https://github.com/PiotrDuma/CalculatorTest/blob/main/results/result2.png)
 
-    ## Summary:
+The complete test results are available on [preview](https://github.com/PiotrDuma/CalculatorTest/blob/main/results/results.png). 
 
-    The unit tests found out that the calculator-1.0.jar liblary contains a few bugs that doesn't pass unit tests. The functions of cos(x), tg(x), and ctg(x) contains invalid Math method invokation and in result they don't pass provided assertions.
+## Summary:
 
-    Body of methods that don't pass the tests:
+The unit tests found out that the calculator-1.0.jar liblary contains a few bugs that doesn't pass unit tests. The functions of cos(x), tg(x), and ctg(x) contains invalid Math method invokation and in result they don't pass provided assertions.
+
+Body of methods that don't pass the tests:
 
 
 ~~~
