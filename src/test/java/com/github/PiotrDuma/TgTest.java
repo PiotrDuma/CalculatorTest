@@ -16,15 +16,15 @@ public class TgTest extends BaseTest{
 
     @ParameterizedTest
     @MethodSource("dataSource")
-    @DisplayName("Should return value of sin({0})")
-    public void sinTest(double value, double expected){
+    @DisplayName("Should return value of tg({0})")
+    public void tgTest(double value, double expected){
         assertEquals(expected, calculator.tg(value), 0.001);
     }
 
     @ParameterizedTest
     @MethodSource("dataSource")
-    @DisplayName("Should keep period of sin function")
-    public void periodSinTest(double value, double expected){
+    @DisplayName("Should keep period of tg function")
+    public void periodTgTest(double value, double expected){
         double period = 200 * Math.PI;
         assertEquals(expected, calculator.tg(period + value), 0.001);
     }

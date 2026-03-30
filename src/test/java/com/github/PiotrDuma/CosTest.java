@@ -22,7 +22,7 @@ public class CosTest extends BaseTest{
     @ParameterizedTest
     @MethodSource("dataSource")
     @DisplayName("Should keep period of cos function")
-    public void periodSinTest(double value, double expected){
+    public void periodCosTest(double value, double expected){
         double period = 200 * Math.PI;
         assertEquals(expected, calculator.cos(period + value), 0.001);
     }
@@ -30,7 +30,7 @@ public class CosTest extends BaseTest{
     @ParameterizedTest
     @MethodSource("dataSource")
     @DisplayName("Should keep symmetry of cos function")
-    public void symmetricSinTest(double value, double expected){
+    public void symmetricCoSTest(double value, double expected){
         assertEquals(expected, calculator.cos(-1 * value), 0.001);
     }
 

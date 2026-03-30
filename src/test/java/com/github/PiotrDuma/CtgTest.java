@@ -16,15 +16,15 @@ public class CtgTest extends BaseTest{
 
     @ParameterizedTest
     @MethodSource("dataSource")
-    @DisplayName("Should return value of sin({0})")
-    public void sinTest(double value, double expected){
+    @DisplayName("Should return value of ctg({0})")
+    public void ctgTest(double value, double expected){
         assertEquals(expected, calculator.ctg(value), 0.001);
     }
 
     @ParameterizedTest
     @MethodSource("dataSource")
-    @DisplayName("Should keep period of sin function")
-    public void periodSinTest(double value, double expected){
+    @DisplayName("Should keep period of ctg function")
+    public void periodCtgTest(double value, double expected){
         double period = 200 * Math.PI;
         assertEquals(expected, calculator.ctg(period + value), 0.001);
     }
